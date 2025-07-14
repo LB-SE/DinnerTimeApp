@@ -1,24 +1,13 @@
-# README
+# Dinner Time App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app displays a list of possible recipes a user can create with a list of available ingredients
 
-Things you may want to cover:
+## Example 1
 
-* Ruby version
+A user search for recipes using only a single ingredient input X.
+They recieve a list of recipes containing X.
 
-* System dependencies
+## Example 2
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A user searches for recipes containing several ingredients X, Y and Z.
+They recieve a list of recipes containing X, Y and Z.

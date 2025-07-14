@@ -7,6 +7,16 @@ class Recipe < ApplicationRecord
 	def self.search(params)
 		return unless params[:q].present?
 
-		Recipe.where("ingredients LIKE ?", "%#{params[:q]}%")
+		# Split the search query if multiple ingredients preset
+		ingredients = params[:q].tr(',', ' ').split(" ")
+		# Ensure array
+		ingredients = [ingredients] unless ingredients.is_a?(Array)
+
+		conditions = ingredients.map { "ingredients LIKE ?" }.join(" AND ")
+		ingredients_wildcard = ingredients.map { |name| "%#{name}%"}
+
+		#Recipe.where("ingredients LIKE ?", "%#{params[:q]}%")
+
+		Recipe.where(conditions, *ingredients_wildcard)
 	end
 end
