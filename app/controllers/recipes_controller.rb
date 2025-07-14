@@ -6,8 +6,6 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
   end
 
-  #
-
   # GET /recipes/1 or /recipes/1.json
   def show
   end
