@@ -10,4 +10,4 @@ They recieve a list of recipes containing egg/s.
 ## Example 2
 
 A user searches for recipes containing several ingredients 'flour sugar, milk'
-They recieve a list of recipes containing flour, sugar and milk.
+They recieve a list of recipes containing flour, sugar and milk
