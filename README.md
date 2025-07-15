@@ -4,10 +4,10 @@ This app displays a list of possible recipes a user can create with a list of av
 
 ## Example 1
 
-A user search for recipes using only a single ingredient input X.
-They recieve a list of recipes containing X.
+A user search for recipes using only a single ingredient 'egg'.
+They recieve a list of recipes containing egg/s.
 
 ## Example 2
 
-A user searches for recipes containing several ingredients X, Y and Z.
-They recieve a list of recipes containing X, Y and Z.
+A user searches for recipes containing several ingredients 'flour sugar, milk'
+They recieve a list of recipes containing flour, sugar and milk.
